@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoArrowBack } from "react-icons/io5";
 import { useNavigate } from "react-router";
 
-const FAQ = () => {
+const Faq = () => {
   const [faqs, setFaqs] = useState([
     {
       id: 1,
@@ -174,6 +174,6 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default Faq;
 
 

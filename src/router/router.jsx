@@ -14,7 +14,8 @@ import Billing from "../pages/bill/Billing";
 import ChangePassword from "../pages/settings/ChangePassword";
 import Faq from "../pages/settings/Faq";
 import TermsCondition from "../pages/settings/TermsCondition";
-import Privacy from "../pages/settings/Privacy";
+import Profile from "../pages/settings/Profile";
+import PrivacyPolicy from "../pages/settings/PrivacyPolicy";
 
 
 
@@ -40,8 +41,9 @@ const router = createBrowserRouter([
       {path: 'billing', element: <Billing />},
       {path: "report", element: <Report/> },
       {path: "settings", element: <Settings />},
+      {path: "settings/profile", element: <Profile /> },
       {path: "settings/changepass", element: <ChangePassword /> },
-      {path: "settings/Policy", element: <Privacy /> },
+      {path: "settings/Policy", element: <PrivacyPolicy /> },
       {path: "settings/terms", element: <TermsCondition /> },
       {path: "settings/faq", element: <Faq /> },
     ]

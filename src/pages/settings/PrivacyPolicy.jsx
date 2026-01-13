@@ -5,11 +5,11 @@ import ReactQuill from "react-quill-new";
 import "react-quill-new/dist/quill.snow.css";
 import { useNavigate } from "react-router";
 
-const TermsCondition = () => {
+const PrivacyPolicy = () => {
   const navigate = useNavigate();
 
   // load saved content from localStorage
-  const savedContent = localStorage.getItem("termsContent") || `
+  const savedContent = localStorage.getItem("privacyContent") || `
     <p>Lorem ipsum dolor sit amet consectetur...</p>
   `;
 
@@ -19,7 +19,7 @@ const TermsCondition = () => {
   const handleEdit = () => setIsEditing(true);
 
   const handleSave = () => {
-    localStorage.setItem("termsContent", content); // 
+    localStorage.setItem("privacyContent", content); // 
     setIsEditing(false);
   };
 
@@ -43,7 +43,7 @@ const TermsCondition = () => {
           onClick={() => navigate("/settings")}
         />
         <h2 className="text-2xl text-[#1F1D1D] font-medium">
-          {isEditing ? "Edit Terms & Condition" : "Terms & Condition"}
+          {isEditing ? "Edit Privacy Policy" : "Privacy Policy"}
         </h2>
       </div>
 
@@ -78,6 +78,5 @@ const TermsCondition = () => {
   );
 };
 
-export default TermsCondition;
-
+export default PrivacyPolicy;
 
