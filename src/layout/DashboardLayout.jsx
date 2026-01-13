@@ -28,7 +28,7 @@ const DashboardLayout = () => {
           setMobileOpen={setMobileOpen}
         />
 
-        <div className="overflow-auto mt-20  p-4">
+        <div className="overflow-auto pt-20  p-4">
           {/* Content */}
           <Outlet />
         </div>

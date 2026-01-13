@@ -11,6 +11,10 @@ import Report from '../pages/report/Report'
 import Settings from '../pages/settings/Settings'
 import DashboardLayout from '../layout/DashboardLayout'
 import Billing from "../pages/bill/Billing";
+import ChangePassword from "../pages/settings/ChangePassword";
+import Faq from "../pages/settings/Faq";
+import TermsCondition from "../pages/settings/TermsCondition";
+import Privacy from "../pages/settings/Privacy";
 
 
 
@@ -35,7 +39,11 @@ const router = createBrowserRouter([
       {path: "user", element: <ClubManagement /> },
       {path: 'billing', element: <Billing />},
       {path: "report", element: <Report/> },
-      {path: "settings", element: <Settings />}
+      {path: "settings", element: <Settings />},
+      {path: "settings/changepass", element: <ChangePassword /> },
+      {path: "settings/Policy", element: <Privacy /> },
+      {path: "settings/terms", element: <TermsCondition /> },
+      {path: "settings/faq", element: <Faq /> },
     ]
   }
  
